@@ -1,3 +1,30 @@
+//Gainsight PX Tag--Start
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-NMWLAA96AZ0G-2");
+  
+//Gainsight PX Tag--End
+
+//passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": "todo", // Required for logged in app users
+    "email": "sreevani@yahoocom",
+    "firstName": "sreevani",
+    "lastName": "malipeddi",
+    "Aadharnumber": 45679, //unix time in ms
+    "PANnumber":635313
+  },
+  {
+  //Account Fields
+    "id":"SVEC", //Required
+    "name":"Vidyanikethan",
+    "Program": "Platinum" // flat custom attributes
+ });
+
 document.addEventListener("DOMContentLoaded",function(){
   const todoForm = document.querySelector(".todo-form");
   const todoInput = document.querySelector(".todo-input");
